@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       Hours.textContent = Hrs - 12;
       am.textContent = 'PM'
     } else {
-      Hours.textContent = Hrs;
+      Hours.textContent = '0' + Hrs;
       am.textContent = "AM"
     }
     let mins = date.getMinutes();
