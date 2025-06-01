@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     let date = new Date()
     let Hrs = date.getHours();
-    // console.log(Hrs)
-    if(Hrs === '00'){
+    if(Hrs == 0){
       Hours.textContent = 12;
+      console.log(Hrs)
 
     }
     if (Hrs >= 13) {
