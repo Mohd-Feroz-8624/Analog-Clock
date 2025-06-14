@@ -47,12 +47,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let Hrs = date.getHours();
     
     if (Hrs >= 13) {
-      Hours.textContent = Hrs - 12;
+      Hours.textContent = 0 + Hrs - 12;
       am.textContent = 'PM'
     } 
     else {
-      Hours.textContent = '0' + Hrs;
+      Hours.textContent =  Hrs;
       am.textContent = "AM"
+    }
+       if (Hrs < 10) {
+      Hours.textContent = 0 + Hrs;
+    }
+    if (Hrs == 12) {
+      am.textContent = 'PM'
+
     }
     let mins = date.getMinutes();
     if (mins >= 0 && mins < 10) {
