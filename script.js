@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let Hrs = date.getHours();
     
     if (Hrs >= 13) {
-      Hours.textContent = 0 + Hrs - 12;
+      Hours.textContent = '0' + Hrs - 12;
       am.textContent = 'PM'
     } 
     else {
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       am.textContent = "AM"
     }
        if (Hrs < 10) {
-      Hours.textContent = 0 + Hrs;
+      Hours.textContent = '0' + Hrs;
     }
     if (Hrs == 12) {
       am.textContent = 'PM'
